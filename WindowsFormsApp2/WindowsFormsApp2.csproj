@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9347A831-1E1B-442F-A8FE-B243A41FC65D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\修改會員資料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\修改會員資料.Designer.cs">
+      <DependentUpon>修改會員資料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\增加會員.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\增加會員.Designer.cs">
+      <DependentUpon>增加會員.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\條件篩選.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\條件篩選.Designer.cs">
+      <DependentUpon>條件篩選.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\結帳選擇地址及配送方式.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\結帳選擇地址及配送方式.Designer.cs">
+      <DependentUpon>結帳選擇地址及配送方式.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\訂單資訊.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\訂單資訊.Designer.cs">
+      <DependentUpon>訂單資訊.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\訂單詳細資料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\訂單詳細資料.Designer.cs">
+      <DependentUpon>訂單詳細資料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\購物車.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\購物車.Designer.cs">
+      <DependentUpon>購物車.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\帽子點單介面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\帽子點單介面.Designer.cs">
+      <DependentUpon>帽子點單介面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="權限功能\帽子庫存設定.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="權限功能\帽子庫存設定.Designer.cs">
+      <DependentUpon>帽子庫存設定.cs</DependentUpon>
+    </Compile>
+    <Compile Include="權限功能\新增商品.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="權限功能\新增商品.Designer.cs">
+      <DependentUpon>新增商品.cs</DependentUpon>
+    </Compile>
+    <Compile Include="權限功能\營業額資訊.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="權限功能\營業額資訊.Designer.cs">
+      <DependentUpon>營業額資訊.cs</DependentUpon>
+    </Compile>
+    <Compile Include="權限功能\管理會員資料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="權限功能\管理會員資料.Designer.cs">
+      <DependentUpon>管理會員資料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="權限功能\管理訂單.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="權限功能\管理訂單.Designer.cs">
+      <DependentUpon>管理訂單.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登入介面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="登入介面.Designer.cs">
+      <DependentUpon>登入介面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hat.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="主選單.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="主選單.Designer.cs">
+      <DependentUpon>主選單.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\修改會員資料.resx">
+      <DependentUpon>修改會員資料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\增加會員.resx">
+      <DependentUpon>增加會員.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\條件篩選.resx">
+      <DependentUpon>條件篩選.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\結帳選擇地址及配送方式.resx">
+      <DependentUpon>結帳選擇地址及配送方式.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\訂單資訊.resx">
+      <DependentUpon>訂單資訊.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\訂單詳細資料.resx">
+      <DependentUpon>訂單詳細資料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\購物車.resx">
+      <DependentUpon>購物車.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\帽子點單介面.resx">
+      <DependentUpon>帽子點單介面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="權限功能\帽子庫存設定.resx">
+      <DependentUpon>帽子庫存設定.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="權限功能\新增商品.resx">
+      <DependentUpon>新增商品.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="權限功能\營業額資訊.resx">
+      <DependentUpon>營業額資訊.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="權限功能\管理會員資料.resx">
+      <DependentUpon>管理會員資料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="權限功能\管理訂單.resx">
+      <DependentUpon>管理訂單.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登入介面.resx">
+      <DependentUpon>登入介面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="主選單.resx">
+      <DependentUpon>主選單.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
