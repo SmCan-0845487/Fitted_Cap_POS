@@ -2,7 +2,7 @@
 這是一個以**全封帽**為主題,所設計的**銷售系統**,介面主要用**Windows Form**設計,資料庫管理則使用**SQL Server**
 
 # ✨文件說明
-[https://drive.google.com/file/d/1kOlSlvcu5bqUXC0j-z0CksV_xPDFkVf2/view?usp=sharing](https://)
+[https://drive.google.com/file/d/1kOlSlvcu5bqUXC0j-z0CksV_xPDFkVf2/view?usp=sharing](https://drive.google.com/file/d/1kOlSlvcu5bqUXC0j-z0CksV_xPDFkVf2/view?usp=sharing)
 
 # 👀操作畫面
 ### 登入及註冊介面
@@ -32,7 +32,7 @@
 # 🚀Run locally
 以下將會引導你如何安裝此專案到你的電腦上
 1. #### 請先安裝SQL Server,可選擇Developer版
-   [https://www.microsoft.com/zh-tw/sql-server/sql-server-downloads](https://)
+   [https://www.microsoft.com/zh-tw/sql-server/sql-server-downloads](https://www.microsoft.com/zh-tw/sql-server/sql-server-downloads)
 
 2. #### 下載完後,點擊SQL Server Tools 20中的 Management Studio 20,連線至伺服器中的名稱填寫本機裝置名稱,選擇Windows驗證
 3. #### 連線後,針對資料庫夾,右鍵點選 "還原資料庫" ,選擇裝置,再點選...,選擇上面資料夾提供的Fitted_Cap_spl,等待還原即可
